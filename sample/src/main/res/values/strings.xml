@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">sample</string>
+    <string name="logs_dir_path">Logs are located at: %1$s</string>
+    <string name="open_logs_dir_folder">Open logs folder</string>
 </resources>

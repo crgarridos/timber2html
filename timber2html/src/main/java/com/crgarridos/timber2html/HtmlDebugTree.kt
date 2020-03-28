@@ -24,8 +24,8 @@ private const val LOGS_FOLDER_NAME = "Logs"
 
 class HtmlDebugTree(context: Context) : Timber.DebugTree() {
 
-    private val logsDir = File(context.applicationContext.getExternalFilesDir(null), LOGS_FOLDER_NAME)
-    private val logInstanceFile = createLogFile(Date())
+    val logsDir = File(context.applicationContext.getExternalFilesDir(null), LOGS_FOLDER_NAME)
+    val logInstanceFile = createLogFile(Date())
 
     override fun log(priority: Int, tag: String?, message: String, t: Throwable?) {
         try {
